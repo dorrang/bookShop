@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>B O O K S</title>
+</head>
+
+<body onload="onInit()">
+
+    <h1 class="title">B O O K S</h1>
+    <button type="button" onclick="onAddBook()">Add Book</button>
+    <section class="main-container">
+        <table>
+            <thead>
+                <tr>
+                    <td class="thead" colspan="2">Book Title</td>
+                    <td class="thead">Price</td>
+                    <td class="thead" colspan="2">Actions</td>
+                </tr>
+            </thead>
+            <tbody class="card-body"></tbody>
+
+        </table>
+
+    </section>
+    <button class="bot" onclick="onPrevPage()">Previous Page</button>
+    <button class="bot" onclick="onNextPage()">Next Page</button>
+
+    <div class="modal" hidden>
+        <h1></h1>
+        <h2></h2>
+        <div class="photo"> </div>
+        <div class="descreption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis placeat quia magnam iure eum cum atque distinctio odio explicabo? Laborum inventore exercitationem, cupiditate quos tempore possimus quod laboriosam maxime laudantium? Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Voluptatem, nesciunt in consectetur reprehenderit magnam dolor praesentium dolorum unde consequatur quia officiis, aut sint porro at, saepe laboriosam pariatur tempore ipsa?</div>
+
+        <div class="rate-container">
+
+        </div>
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/bookshop-controller.js"></script>
+
+</body>
+
+</html>
